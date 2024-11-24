@@ -22,8 +22,8 @@ public class SongPlaylist {
   private static final String UP = "w";
   private static final String DOWN = "s";
   private static final String PLAY = "p";
-  private static final String DELETE = "-";
   private static final String ADD = "+";
+  private static final String DELETE = "-";
   private static final String QUIT = "q";
 
   SongPlaylist() {
@@ -151,31 +151,18 @@ public class SongPlaylist {
       switch (input.toLowerCase()) {
         case UP:
           navigateUp();
-          break;
-
         case DOWN:
           navigateDown();
-          break;
-
         case PLAY:
           playSong();
-          break;
-
         case DELETE:
           deleteSong();
-          break;
-
         case ADD:
           addSong();
-          break;
-
         case QUIT:
           quitApp();
-          return;
-
         default:
           isInvalid = true;
-          break;
       }
 
       displayUI();
