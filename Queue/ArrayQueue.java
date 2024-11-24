@@ -1,7 +1,6 @@
 package Queue;
 
 public class ArrayQueue {
-
   int maxQueueSize = 100;
   char[] newQueue = new char[maxQueueSize];
   int queueFront, queueRear;
